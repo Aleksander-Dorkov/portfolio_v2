@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
 import { ProjectDetails } from "../model/model";
+import { ProjectComponent } from "./project.component";
 
 @Component({
   selector: 'app-project-section',
   standalone: true,
-  imports: [],
+  imports: [
+    ProjectComponent
+  ],
   template: `
     <div class="row justify-content-center">
       <h1>
         Projects
       </h1>
+      <div class="col-12">
+        <app-project [project]="onlineMovieDatabase"/>
+      </div>
+      <div class="col-12">
+        <app-project [project]="bugTrackerDatabase"/>
+      </div>
     </div>
   `,
   styles: `
