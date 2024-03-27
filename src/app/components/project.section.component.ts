@@ -9,7 +9,7 @@ import { ProjectComponent } from "./project.component";
     ProjectComponent
   ],
   template: `
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="margin-left: 4%; margin-right: 4%">
       <h1>
         Projects
       </h1>
