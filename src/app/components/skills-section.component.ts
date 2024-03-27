@@ -34,7 +34,7 @@ import { SkillSectionInfo } from "../model/model";
     }
   `
 })
-export class SkillsSectionV2Component {
+export class SkillsSectionComponent {
 
   backend: SkillSectionInfo = {
     sectionTitle: 'BackEnd',
