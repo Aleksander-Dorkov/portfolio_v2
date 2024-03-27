@@ -9,13 +9,15 @@ import { SkillsSectionComponent } from "./components/skills.section.component";
 import { SkillsComponent } from "./components/skills.component";
 import AOS from "aos";
 import { AnimateOnScrollModule } from "primeng/animateonscroll";
+import LocomotiveScroll from 'locomotive-scroll';
+import { NavImageComponent } from "./components/nav-image.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet, ListboxModule, FormsModule, MenubarModule, NavBarComponent,
-    SkillsSectionComponent, SkillsComponent,AnimateOnScrollModule
+    SkillsSectionComponent, SkillsComponent, AnimateOnScrollModule, NavImageComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -34,6 +36,10 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    AOS.init();
+    // const scroll = new LocomotiveScroll({
+    //   // @ts-ignore
+    //   el: document.querySelector('[data-scroll-container]'),
+    //   smooth: true
+    // });
   }
 }
