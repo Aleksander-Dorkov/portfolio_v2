@@ -11,13 +11,15 @@ import AOS from "aos";
 import { AnimateOnScrollModule } from "primeng/animateonscroll";
 import LocomotiveScroll from 'locomotive-scroll';
 import { NavImageComponent } from "./components/nav-image.component";
+import { ProjectSectionComponent } from "./components/project.section.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet, ListboxModule, FormsModule, MenubarModule, NavBarComponent,
-    SkillsSectionComponent, SkillsComponent, AnimateOnScrollModule, NavImageComponent
+    SkillsSectionComponent, SkillsComponent, AnimateOnScrollModule, NavImageComponent,
+    ProjectSectionComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

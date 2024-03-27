@@ -8,3 +8,12 @@ export interface SkillSectionInfo {
   sectionTitle: string,
   animation: string
 }
+
+export interface ProjectDetails {
+  description: string,
+  projectTitle: string
+  headerImageUrl: string
+  backEndDependencies: string[]
+  frontEndDependencies: string[]
+  database: string
+}

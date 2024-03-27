@@ -13,6 +13,9 @@ import { SkillSectionInfo } from "../model/model";
     SkillsSectionComponent
   ],
   template: `
+    <h1>
+      Skills
+    </h1>
     <div class="row justify-content-center">
       <div class="col-6">
         <app-skills-section [skillSectionInfo]="backend"/>
@@ -25,7 +28,11 @@ import { SkillSectionInfo } from "../model/model";
       </div>
     </div>
   `,
-  styles: ``
+  styles: `
+    h1 {
+      text-align: center;
+    }
+  `
 })
 export class SkillsComponent {
 
