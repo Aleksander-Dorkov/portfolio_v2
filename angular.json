@@ -13,6 +13,10 @@
           "standalone": true,
           "inlineTemplate": true,
           "inlineStyle": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true,
+          "flat": true
         }
       },
       "root": "",

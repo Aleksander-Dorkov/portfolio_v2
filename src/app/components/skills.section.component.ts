@@ -8,9 +8,13 @@ import { SkillSectionInfo } from "../model/model";
   imports: [CardModule],
   template: `
     <h2 class="align-text-center mb-4">{{ skillSectionInfo.sectionTitle }}</h2>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center"
+         data-aos="fade-up"
+         data-aos-easing="ease-in-sine"
+         data-aos-duration="1000"
+    >
       @for (skill of skillSectionInfo.programmingSkills; track skill.name) {
-        <div class="col-md-2 col-sm-6 m-3">
+        <div class="col-md-2 col-sm-6 mb-3" style="width: 200px;">
           <p-card class="skill-card">
             <img alt="Not found" src="{{skill.svgUrl}}"/>
             <p class="align-text-center">{{ skill.name }}</p>
@@ -41,6 +45,9 @@ import { SkillSectionInfo } from "../model/model";
     .align-text-center {
       text-align: center;
       font-weight: bold;
+    }
+    :host {
+      margin: 0;
     }
   `
 })

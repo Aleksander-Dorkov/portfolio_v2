@@ -5,5 +5,6 @@ export interface ProgrammingSKill {
 
 export interface SkillSectionInfo {
   programmingSkills: ProgrammingSKill[],
-  sectionTitle: string
+  sectionTitle: string,
+  animation: string
 }
