@@ -44,7 +44,8 @@ import { SkillSectionInfo } from "../model/model";
     }
   `
 })
-export class SkillsSectionComponent {
+export class SkillsSectionComponent  {
+
   @Input({required: true})
   skillSectionInfo: SkillSectionInfo
 }
