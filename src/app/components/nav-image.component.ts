@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { SkillsComponent } from "./skills.component";
+import { SkillsSectionV2Component } from "./skills-section-v2.component";
 
 @Component({
   selector: 'app-nav-image',
   standalone: true,
   imports: [
-    SkillsComponent
+    SkillsSectionV2Component
   ],
   template: `
     <div class="wrapper">

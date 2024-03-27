@@ -5,8 +5,8 @@ import { FormsModule } from "@angular/forms";
 import { MenubarModule } from "primeng/menubar";
 import { MenuItem, PrimeIcons, PrimeNGConfig } from "primeng/api";
 import { NavBarComponent } from "./components/nav-bar.component";
-import { SkillsSectionComponent } from "./components/skills.section.component";
 import { SkillsComponent } from "./components/skills.component";
+import { SkillsSectionV2Component } from "./components/skills-section-v2.component";
 import AOS from "aos";
 import { AnimateOnScrollModule } from "primeng/animateonscroll";
 import LocomotiveScroll from 'locomotive-scroll';
@@ -18,7 +18,7 @@ import { ProjectSectionComponent } from "./components/project.section.component"
   standalone: true,
   imports: [
     RouterOutlet, ListboxModule, FormsModule, MenubarModule, NavBarComponent,
-    SkillsSectionComponent, SkillsComponent, AnimateOnScrollModule, NavImageComponent,
+    SkillsComponent, SkillsSectionV2Component, AnimateOnScrollModule, NavImageComponent,
     ProjectSectionComponent
   ],
   templateUrl: './app.component.html',
