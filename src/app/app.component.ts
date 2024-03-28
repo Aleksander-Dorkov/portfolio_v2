@@ -1,32 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ListboxModule } from 'primeng/listbox';
-import { FormsModule } from "@angular/forms";
-import { MenubarModule } from "primeng/menubar";
 import { MenuItem, PrimeIcons, PrimeNGConfig } from "primeng/api";
 import { NavBarComponent } from "./components/nav-bar.component";
-import { SkillsComponent } from "./components/skills.component";
 import { SkillsSectionComponent } from "./components/skills-section.component";
-import AOS from "aos";
-import { AnimateOnScrollModule } from "primeng/animateonscroll";
-import LocomotiveScroll from 'locomotive-scroll';
 import { NavImageComponent } from "./components/nav-image.component";
 import { ProjectSectionComponent } from "./components/project.section.component";
 import { AboutMeSectionComponent } from "./components/about.me.section.component";
 import { ContactsComponent } from "./components/contacts.component";
+import { SvgComponent } from "./components/svg.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, ListboxModule, FormsModule, MenubarModule, NavBarComponent,
-    SkillsComponent, SkillsSectionComponent, AnimateOnScrollModule, NavImageComponent,
-    ProjectSectionComponent, AboutMeSectionComponent, ContactsComponent,
+    RouterOutlet,
+    NavBarComponent,
+    SkillsSectionComponent,
+    NavImageComponent,
+    ProjectSectionComponent,
+    AboutMeSectionComponent,
+    ContactsComponent,
+    SvgComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   cars: MenuItem[];
 
   constructor(private primengConfig: PrimeNGConfig) {
