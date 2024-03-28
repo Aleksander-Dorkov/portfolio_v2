@@ -17,3 +17,10 @@ export interface ProjectDetails {
   frontEndDependencies: string[]
   database: string
 }
+
+export interface WorkDetail {
+  company: string,
+  jobTitle: string,
+  timeSpan: string
+  duties: string[]
+}

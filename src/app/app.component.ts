@@ -12,6 +12,7 @@ import { AnimateOnScrollModule } from "primeng/animateonscroll";
 import LocomotiveScroll from 'locomotive-scroll';
 import { NavImageComponent } from "./components/nav-image.component";
 import { ProjectSectionComponent } from "./components/project.section.component";
+import { AboutMeSectionComponent } from "./components/about.me.section.component";
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,7 @@ import { ProjectSectionComponent } from "./components/project.section.component"
   imports: [
     RouterOutlet, ListboxModule, FormsModule, MenubarModule, NavBarComponent,
     SkillsComponent, SkillsSectionComponent, AnimateOnScrollModule, NavImageComponent,
-    ProjectSectionComponent
+    ProjectSectionComponent, AboutMeSectionComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
