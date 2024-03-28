@@ -13,6 +13,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import { NavImageComponent } from "./components/nav-image.component";
 import { ProjectSectionComponent } from "./components/project.section.component";
 import { AboutMeSectionComponent } from "./components/about.me.section.component";
+import { ContactsComponent } from "./components/contacts.component";
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,7 @@ import { AboutMeSectionComponent } from "./components/about.me.section.component
   imports: [
     RouterOutlet, ListboxModule, FormsModule, MenubarModule, NavBarComponent,
     SkillsComponent, SkillsSectionComponent, AnimateOnScrollModule, NavImageComponent,
-    ProjectSectionComponent, AboutMeSectionComponent,
+    ProjectSectionComponent, AboutMeSectionComponent, ContactsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
