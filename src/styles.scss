@@ -2,4 +2,8 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 @import "bootstrap/dist/css/bootstrap-grid.css";
-@import "locomotive-scroll/dist/locomotive-scroll.css";
+
+.link-wrapper {
+  text-decoration: none;
+  color: inherit
+}

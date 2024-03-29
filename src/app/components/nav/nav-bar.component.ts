@@ -51,11 +51,6 @@ import { MenubarModule } from "primeng/menubar";
     .triangle-top-right i:hover {
       cursor: pointer;
     }
-
-    .link-wrapper {
-      text-decoration: none;
-      color: inherit
-    }
   `
 })
 export class NavBarComponent {

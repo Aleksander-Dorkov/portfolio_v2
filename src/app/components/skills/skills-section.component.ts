@@ -38,7 +38,7 @@ export class SkillsSectionComponent {
 
   backend: SkillSectionInfo = {
     sectionTitle: 'BackEnd',
-    animation:'fade-right',
+    animation: 'fade-right',
     programmingSkills: [
       {name: 'Java', svgUrl: 'https://www.vectorlogo.zone/logos/java/java-icon.svg'},
       {name: 'Spring Boot', svgUrl: 'https://spring.io/img/projects/spring-boot.svg'},
@@ -61,7 +61,7 @@ export class SkillsSectionComponent {
   }
   frontEnd: SkillSectionInfo = {
     sectionTitle: 'frontEnd',
-    animation:'fade-right',
+    animation: 'fade-right',
     programmingSkills: [
       {name: 'HTML', svgUrl: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'},
       {name: 'CSS', svgUrl: 'https://www.iconninja.com/files/64/358/407/css3-icon.svg'},
@@ -84,7 +84,7 @@ export class SkillsSectionComponent {
   }
   databases: SkillSectionInfo = {
     sectionTitle: 'Databases',
-    animation:'fade-right',
+    animation: 'fade-right',
     programmingSkills: [
       {
         name: 'PostgreSQL',

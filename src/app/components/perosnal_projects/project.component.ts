@@ -94,11 +94,6 @@ import { PrimeNGConfig } from "primeng/api";
       width: auto;
       margin-bottom: 10px;
     }
-
-    .link-wrapper {
-      text-decoration: none;
-      color: inherit
-    }
   `
 })
 export class ProjectComponent {
