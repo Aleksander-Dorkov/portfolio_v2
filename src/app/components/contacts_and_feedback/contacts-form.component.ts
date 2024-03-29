@@ -54,6 +54,11 @@ import { RippleModule } from "primeng/ripple";
               class="p-button-help mt-3">
       </button>
     </form>
+    <!-- This is just to download the word version of the CV-->
+    <a href="/assets/Aleksandar_Drokov_CV_2024.docx" download target="_blank"
+       class="link-wrapper">
+      <i class="pi pi-file-pdf justify-content-end d-flex"></i>
+    </a>
   `,
   styles: `
     h2 {
