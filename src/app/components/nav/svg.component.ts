@@ -25,6 +25,7 @@ import { Component } from '@angular/core';
   styles: `
     .my-class:hover {
       transform: translate(200px, 30px) scale(1.2, 1.2) rotate(360deg);
+      opacity: 0.5;
       transition: 2s ease-in-out;
       cursor: pointer;
     }

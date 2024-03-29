@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MenuItem, PrimeIcons, PrimeNGConfig } from "primeng/api";
+import { PrimeNGConfig } from "primeng/api";
 import { NavBarComponent } from "./components/nav/nav-bar.component";
 import { SkillsSectionComponent } from "./components/skills/skills-section.component";
 import { NavImageComponent } from "./components/nav/nav-image.component";
@@ -22,20 +22,12 @@ import { SvgComponent } from "./components/nav/svg.component";
     ContactsComponent,
     SvgComponent,
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
-  cars: MenuItem[];
 
   constructor(private primengConfig: PrimeNGConfig) {
     this.primengConfig.ripple = true;
-    this.cars = [
-      {label: '222', icon: PrimeIcons.PLUS, value: 'Audi222'},
-      {label: '111', value: 'BM222W'},
-      {label: '33', value: 'Merc22edes'},
-      {label: '444', value: 'Toyot22a'}
-    ];
   }
 
   ngOnInit(): void {
