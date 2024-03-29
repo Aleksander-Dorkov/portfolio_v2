@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProjectDetails } from "../model/model";
+import { ProjectDetails } from "../../model/model";
 import { CardModule } from "primeng/card";
 import { PrimeNGConfig } from "primeng/api";
 

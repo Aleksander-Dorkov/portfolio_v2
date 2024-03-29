@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkillsSectionComponent } from "./skills-section.component";
+import { SkillsSectionComponent } from "../skills/skills-section.component";
 
 @Component({
   selector: 'app-nav-image',

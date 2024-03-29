@@ -3,7 +3,7 @@ import { CardModule } from "primeng/card";
 import {
   SkillsComponent
 } from "./skills.component";
-import { SkillSectionInfo } from "../model/model";
+import { SkillSectionInfo } from "../../model/model";
 
 @Component({
   selector: 'app-skills-section',

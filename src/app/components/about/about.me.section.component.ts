@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WorkDetail } from "../model/model";
+import { WorkDetail } from "../../model/model";
 import { CardModule } from "primeng/card";
 import { WorkDetailComponent } from "./work-detail.component";
 

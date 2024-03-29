@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CardModule } from "primeng/card";
-import { SkillSectionInfo } from "../model/model";
+import { SkillSectionInfo } from "../../model/model";
 
 @Component({
   selector: 'app-skills',

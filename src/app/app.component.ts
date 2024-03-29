@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MenuItem, PrimeIcons, PrimeNGConfig } from "primeng/api";
-import { NavBarComponent } from "./components/nav-bar.component";
-import { SkillsSectionComponent } from "./components/skills-section.component";
-import { NavImageComponent } from "./components/nav-image.component";
-import { ProjectSectionComponent } from "./components/project.section.component";
-import { AboutMeSectionComponent } from "./components/about.me.section.component";
+import { NavBarComponent } from "./components/nav/nav-bar.component";
+import { SkillsSectionComponent } from "./components/skills/skills-section.component";
+import { NavImageComponent } from "./components/nav/nav-image.component";
+import { ProjectSectionComponent } from "./components/perosnal_projects/project.section.component";
+import { AboutMeSectionComponent } from "./components/about/about.me.section.component";
 import { ContactsComponent } from "./components/contacts.component";
-import { SvgComponent } from "./components/svg.component";
+import { SvgComponent } from "./components/nav/svg.component";
 
 @Component({
   selector: 'app-root',

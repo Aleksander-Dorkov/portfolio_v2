@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { WorkDetail } from "../model/model";
+import { WorkDetail } from "../../model/model";
 
 @Component({
   selector: 'app-work-detail',

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <svg width="1272.401" height="76.402" viewBox="0 0 1272.401 76.402"
-         xmlns="http://www.w3.org/2000/svg">
+         xmlns="http://www.w3.org/2000/svg" class="my-class">
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style="stop-color:#f8a5b9;stop-opacity:1"/>
@@ -22,7 +22,18 @@ import { Component } from '@angular/core';
       </g>
     </svg>
   `,
-  styles: ``
+  styles: `
+    .my-class:hover {
+      transform: translate(200px, 30px) scale(1.2, 1.2) rotate(360deg);
+      transition: 2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .my-class {
+      transform: translate(0px, 0px) scale(1, 1) rotate(0deg);
+      transition: 2s ease-in-out;
+    }
+  `
 })
 export class SvgComponent {
 
