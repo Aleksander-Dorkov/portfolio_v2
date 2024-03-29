@@ -12,20 +12,28 @@ import { PrimeNGConfig } from "primeng/api";
       <p-card>
         <h1>{{ project.projectTitle }}</h1>
         <div class="project-info">
-          <i class="pi pi-arrow-up-right" style="margin-left: 0"></i>
+          <a href="{{project.deployedUrl}}" target="_blank" class="link-wrapper">
+            <i class="pi pi-arrow-up-right" style="margin-left: 0"></i>
+          </a>
           <span>View Deployed</span>
-          <i class="pi pi-github"></i>
+          <a href="{{project.backEndGithubUrl}}" target="_blank" class="link-wrapper">
+            <i class="pi pi-github"></i>
+          </a>
           <span>Back End</span>
-          <i class="pi pi-github"></i>
+          <a href="{{project.frontEndGithubUrlUrl}}" target="_blank" class="link-wrapper">
+            <i class="pi pi-github"></i>
+          </a>
           <span>Front End</span>
         </div>
-        <img src="{{ project.headerImageUrl }}" alt="not avaialble" style="width: 100%">
+        <img src="{{ project.projectImageUrl }}" alt="not avaialble" style="width: 100%">
         <h2>Description</h2>
         <p>{{ project.description }}</p>
         <h2>Back End Dependencies</h2>
         <ul class="custom-list">
           @for (dependency of project.backEndDependencies; track dependency) {
-            <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/7dee48469efc251a6426e81c788482e2734f7b7d/icons/file_type_maven.svg" alt="not available">
+            <img
+              src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/7dee48469efc251a6426e81c788482e2734f7b7d/icons/file_type_maven.svg"
+              alt="not available">
             <li>{{ dependency }}</li>
             <br/>
           }
@@ -85,6 +93,11 @@ import { PrimeNGConfig } from "primeng/api";
       display: inline-block;
       width: auto;
       margin-bottom: 10px;
+    }
+
+    .link-wrapper {
+      text-decoration: none;
+      color: inherit
     }
   `
 })

@@ -12,7 +12,10 @@ export interface SkillSectionInfo {
 export interface ProjectDetails {
   description: string,
   projectTitle: string
-  headerImageUrl: string
+  projectImageUrl: string,
+  deployedUrl: string,
+  backEndGithubUrl: string,
+  frontEndGithubUrlUrl: string,
   backEndDependencies: string[]
   frontEndDependencies: string[]
   database: string

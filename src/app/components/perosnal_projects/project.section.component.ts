@@ -31,7 +31,10 @@ export class ProjectSectionComponent {
   onlineMovieDatabase: ProjectDetails = {
     projectTitle: 'Online Movie Database',
     description: 'SPA WebApp that allows users to brows movies, tv shows, actors. Add favorites, submit comments',
-    headerImageUrl: 'https://i.ibb.co/hKVWzWP/Untitled.png',
+    projectImageUrl: 'https://i.ibb.co/hKVWzWP/Untitled.png',
+    deployedUrl: 'https://online-movie-database.netlify.app/',
+    backEndGithubUrl: 'https://github.com/Aleksander-Dorkov/Movie-DB-GraphQL-API',
+    frontEndGithubUrlUrl: 'https://github.com/Aleksander-Dorkov/Movie-DB-Front-End',
     backEndDependencies: [
       "Spring Security",
       "JJWT - JWT generator",
@@ -66,7 +69,10 @@ export class ProjectSectionComponent {
   bugTrackerDatabase: ProjectDetails = {
     projectTitle: 'Bug Tracker',
     description: 'SPA WebApp that imitates a Bug Tracker. Users can create Projects, submit Tickets, resolve Tickets comment on this tickets.\n',
-    headerImageUrl: 'https://i.ibb.co/0Fh3S0y/image.png',
+    projectImageUrl: 'https://i.ibb.co/0Fh3S0y/image.png',
+    deployedUrl: 'https://destroy-bugs.netlify.app/',
+    backEndGithubUrl: 'https://github.com/Aleksander-Dorkov/Issue-Bug-Treacker-REST-API',
+    frontEndGithubUrlUrl: 'https://github.com/Aleksander-Dorkov/Issue-Bug-Treacker-Front-End',
     backEndDependencies: [
       "Spring Security",
       "JJWT - JWT generator",

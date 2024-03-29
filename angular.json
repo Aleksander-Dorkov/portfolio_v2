@@ -17,6 +17,10 @@
         "@schematics/angular:directive": {
           "skipTests": true,
           "flat": true
+        },
+        "@schematics/angular:class": {
+          "type": "model",
+          "skipTests": true
         }
       },
       "root": "",

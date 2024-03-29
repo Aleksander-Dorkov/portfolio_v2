@@ -18,7 +18,9 @@ import { SkillsSectionComponent } from "../skills/skills-section.component";
         </h2>
         <p>Software Engineer</p>
         <div>
-          <i class="pi pi-github" style="font-size: 2rem"></i>
+          <a href="https://github.com/Aleksander-Dorkov" target="_blank" class="link-wrapper">
+            <i class="pi pi-github" style="font-size: 2rem"></i>
+          </a>
           <span>Github</span>
           <i class="pi pi-download" style="font-size: 2rem"></i>
           <span>Resume</span>
@@ -63,6 +65,11 @@ import { SkillsSectionComponent } from "../skills/skills-section.component";
     }
     .content div span:hover {
       cursor: pointer;
+    }
+
+    .link-wrapper {
+      text-decoration: none;
+      color: inherit
     }
   `
 })
