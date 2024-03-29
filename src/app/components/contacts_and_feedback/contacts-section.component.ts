@@ -12,7 +12,7 @@ import { CardModule } from "primeng/card";
     CardModule
   ],
   template: `
-    <h1>
+    <h1 class="section-header">
       Contacts and Feedback
     </h1>
     <div class="row justify-content-center">
@@ -29,9 +29,6 @@ import { CardModule } from "primeng/card";
     </div>
   `,
   styles: `
-    h1 {
-      text-align: center;
-    }
   `
 })
 export class ContactsSectionComponent {

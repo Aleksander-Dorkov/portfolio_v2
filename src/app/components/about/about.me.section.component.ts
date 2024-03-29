@@ -8,7 +8,7 @@ import { WorkDetailComponent } from "./work-detail.component";
   standalone: true,
   imports: [CardModule, WorkDetailComponent],
   template: `
-    <h1>
+    <h1 class="section-header">
       About Me
     </h1>
     <p-card>
@@ -42,10 +42,6 @@ import { WorkDetailComponent } from "./work-detail.component";
     </p-card>
   `,
   styles: `
-    h1 {
-      text-align: center;
-    }
-
     h2 {
       font-size: 220%;
       margin-bottom: 0;

@@ -13,7 +13,7 @@ import { SkillSectionInfo } from "../../model/model";
     SkillsComponent
   ],
   template: `
-    <h1>
+    <h1 class="section-header">
       Skills
     </h1>
     <div class="row justify-content-center">
@@ -29,9 +29,6 @@ import { SkillSectionInfo } from "../../model/model";
     </div>
   `,
   styles: `
-    h1 {
-      text-align: center;
-    }
   `
 })
 export class SkillsSectionComponent {
@@ -60,7 +57,7 @@ export class SkillsSectionComponent {
     ]
   }
   frontEnd: SkillSectionInfo = {
-    sectionTitle: 'frontEnd',
+    sectionTitle: 'FrontEnd',
     animation: 'fade-right',
     programmingSkills: [
       {name: 'HTML', svgUrl: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'},

@@ -10,7 +10,7 @@ import { ProjectComponent } from "./project.component";
   ],
   template: `
     <div class="row justify-content-center" style="margin-left: 4%; margin-right: 4%">
-      <h1>
+      <h1 class="section-header">
         Projects
       </h1>
       <div class="col-12">
@@ -22,9 +22,6 @@ import { ProjectComponent } from "./project.component";
     </div>
   `,
   styles: `
-    h1 {
-      text-align: center;
-    }
   `
 })
 export class ProjectSectionComponent {
