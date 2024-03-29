@@ -22,7 +22,7 @@ import { SkillsSectionComponent } from "../skills/skills-section.component";
             <i class="pi pi-github" style="font-size: 2rem"></i>
           </a>
           <span>Github</span>
-          <a href="/assets/Aleksandar-Dorkov-Resume.pdf" download target="_blank"
+          <a href="/assets/Aleksandar_Drokov_CV_2024.pdf" download target="_blank"
              class="link-wrapper">
             <i class="pi pi-download" style="font-size: 2rem"></i>
             <span>Resume</span>

@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
         Email Address : Click to send me an email
       </li>
       <li>
-        <a href="/assets/Aleksandar-Dorkov-Resume.pdf" download target="_blank"
+        <a href="/assets/Aleksandar_Drokov_CV_2024.pdf" download target="_blank"
            class="link-wrapper">
           <i class="pi pi-file-pdf"></i>
           Resume : Click to read my resume online
