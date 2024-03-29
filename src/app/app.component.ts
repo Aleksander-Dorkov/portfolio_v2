@@ -6,8 +6,10 @@ import { SkillsSectionComponent } from "./components/skills/skills-section.compo
 import { NavImageComponent } from "./components/nav/nav-image.component";
 import { ProjectSectionComponent } from "./components/perosnal_projects/project.section.component";
 import { AboutMeSectionComponent } from "./components/about/about.me.section.component";
-import { ContactsComponent } from "./components/contacts.component";
 import { SvgComponent } from "./components/nav/svg.component";
+import {
+  ContactsSectionComponent
+} from "./components/contacts_and_feedback/contacts-section.component";
 
 @Component({
   selector: 'app-root',
@@ -19,8 +21,8 @@ import { SvgComponent } from "./components/nav/svg.component";
     NavImageComponent,
     ProjectSectionComponent,
     AboutMeSectionComponent,
-    ContactsComponent,
     SvgComponent,
+    ContactsSectionComponent,
   ],
   templateUrl: './app.component.html'
 })
@@ -31,10 +33,5 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // const scroll = new LocomotiveScroll({
-    //   // @ts-ignore
-    //   el: document.querySelector('[data-scroll-container]'),
-    //   smooth: true
-    // });
   }
 }

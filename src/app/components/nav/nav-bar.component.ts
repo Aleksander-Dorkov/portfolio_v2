@@ -19,6 +19,7 @@ import { MenubarModule } from "primeng/menubar";
     </div>
   `,
   styles: `
+    //navbar css
     div.card {
       position: fixed;
       z-index: 998;
@@ -26,6 +27,7 @@ import { MenubarModule } from "primeng/menubar";
       top: 0;
     }
 
+    //github triangle css
     .triangle-top-right {
       z-index: 999;
       position: fixed;
