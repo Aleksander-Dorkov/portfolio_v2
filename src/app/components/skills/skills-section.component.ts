@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { CardModule } from "primeng/card";
-import {
-  SkillsComponent
-} from "./skills.component";
+import { SkillsComponent } from "./skills.component";
 import { SkillSectionInfo } from "../../model/model";
 
 @Component({

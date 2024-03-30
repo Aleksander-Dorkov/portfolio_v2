@@ -10,46 +10,65 @@ import { PrimeNGConfig } from "primeng/api";
   template: `
     <div class="wrapper">
       <p-card>
-        <h1>{{ project.projectTitle }}</h1>
-        <div class="project-info">
-          <a href="{{project.deployedUrl}}" target="_blank" class="link-wrapper">
-            <i class="pi pi-arrow-up-right" style="margin-left: 0"></i>
-          </a>
-          <span>View Deployed</span>
-          <a href="{{project.backEndGithubUrl}}" target="_blank" class="link-wrapper">
-            <i class="pi pi-github"></i>
-          </a>
-          <span>Back End</span>
-          <a href="{{project.frontEndGithubUrlUrl}}" target="_blank" class="link-wrapper">
-            <i class="pi pi-github"></i>
-          </a>
-          <span>Front End</span>
+        <div data-aos="fade-down"
+             data-aos-easing="ease-out-cubic"
+             data-aos-duration="1500">
+          <h1>{{ project.projectTitle }}</h1>
         </div>
-        <img src="{{ project.projectImageUrl }}" alt="not avaialble" style="width: 100%">
+        <div class="project-info">
+          <div data-aos="fade-up" data-aos-duration="1000" style="display: inline">
+            <a href="{{project.deployedUrl}}" target="_blank" class="link-wrapper">
+              <i class="pi pi-arrow-up-right" style="margin-left: 0"></i>
+              <span>View Deployed</span>
+            </a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" style="display: inline">
+            <a href="{{project.backEndGithubUrl}}" target="_blank" class="link-wrapper">
+              <i class="pi pi-github"></i>
+            </a>
+            <span>Back End</span>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" style="display: inline">
+            <a href="{{project.frontEndGithubUrlUrl}}" target="_blank" class="link-wrapper">
+              <i class="pi pi-github"></i>
+            </a>
+            <span>Front End</span>
+          </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <img src="{{ project.projectImageUrl }}" alt="not avaialble" style="width: 100%">
+        </div>
         <h2>Description</h2>
         <p>{{ project.description }}</p>
+
         <h2>Back End Dependencies</h2>
         <ul class="custom-list">
           @for (dependency of project.backEndDependencies; track dependency) {
-            <img
-              src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/7dee48469efc251a6426e81c788482e2734f7b7d/icons/file_type_maven.svg"
-              alt="not available">
-            <li>{{ dependency }}</li>
-            <br/>
+            <div data-aos="flip-left">
+              <img
+                src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/7dee48469efc251a6426e81c788482e2734f7b7d/icons/file_type_maven.svg"
+                alt="not available">
+              <li>{{ dependency }}</li>
+            </div>
           }
         </ul>
+
         <h2>Front End Dependencies</h2>
         <ul class="custom-list">
           @for (dependency of project.frontEndDependencies; track dependency) {
-            <img src="https://www.vectorlogo.zone/logos/npmjs/npmjs-icon.svg" alt="not available">
-            <li>{{ dependency }}</li>
-            <br/>
+            <div data-aos="flip-left">
+              <img src="https://www.vectorlogo.zone/logos/npmjs/npmjs-icon.svg" alt="not available">
+              <li>{{ dependency }}</li>
+            </div>
           }
         </ul>
+
         <h2>Database</h2>
         <ul class="custom-list">
-          <img src="https://i.ibb.co/hKyRJvf/icons8-add-database-80.png" alt="not available">
-          <li>{{ project.database }}</li>
+          <div data-aos="flip-left">
+            <img src="https://i.ibb.co/hKyRJvf/icons8-add-database-80.png" alt="not available">
+            <li>{{ project.database }}</li>
+          </div>
         </ul>
       </p-card>
     </div>

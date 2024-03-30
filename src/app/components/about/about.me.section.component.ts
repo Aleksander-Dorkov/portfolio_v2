@@ -13,10 +13,12 @@ import { WorkDetailComponent } from "./work-detail.component";
     </h1>
     <p-card>
       <div class="row">
-        <div class="col-2">
-          <img src="https://i.imgur.com/tA5SMsX.png" alt="not found" width="200" height="300">
+        <div class="col-lg-2 col-md-12">
+          <div data-aos="zoom-in" data-aos-duration="1500">
+            <img src="https://i.imgur.com/tA5SMsX.png" alt="not found" width="200" height="300">
+          </div>
         </div>
-        <div class="col-md-10 col-sm-12">
+        <div class="col-lg-10 col-md-12">
           <h2>Software Engineer work experience</h2>
           <app-work-detail [workDetail]="openTag"/>
           <app-work-detail [workDetail]="vmWare"/>

@@ -25,7 +25,18 @@ import AOS from "aos";
     SvgComponent,
     ContactsSectionComponent,
   ],
-  templateUrl: './app.component.html'
+  template:`
+    <app-svg/>
+    <app-nav-bar id="HOME"/>
+    <app-nav-image/>
+    <app-skills-section id="SKILLS"/>
+    <app-project-section id="PROJECTS"/>
+    <img src="https://i2.wp.com/bicyclenl.com/wp-content/uploads/2015/12/parallax-dark.jpg"
+         style="width: 100%"
+         alt="not available"/>
+    <app-about-me-section id="ABOUTME"/>
+    <app-contacts-section id="CONTACTS"/>
+  `
 })
 export class AppComponent implements OnInit {
 
