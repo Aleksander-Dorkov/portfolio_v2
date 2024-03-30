@@ -25,7 +25,7 @@ import AOS from "aos";
     SvgComponent,
     ContactsSectionComponent,
   ],
-  template:`
+  template: `
     <app-svg/>
     <app-nav-bar id="HOME"/>
     <app-nav-image/>
@@ -36,6 +36,8 @@ import AOS from "aos";
          alt="not available"/>
     <app-about-me-section id="ABOUTME"/>
     <app-contacts-section id="CONTACTS"/>
+  `,
+  styles: `
   `
 })
 export class AppComponent implements OnInit {
@@ -45,6 +47,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log('ss');
     AOS.init();
   }
 }

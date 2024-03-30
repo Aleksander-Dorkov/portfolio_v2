@@ -13,8 +13,10 @@ import { WorkDetail } from "../../model/model";
       <ul class="custom-list">
         @for (duty of workDetail.duties; track duty) {
           <li>
-            <i class="pi pi-check-circle"></i>
-            {{ duty }}
+            <div data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <i class="pi pi-check-circle"></i>
+              {{ duty }}
+            </div>
           </li>
         }
       </ul>
