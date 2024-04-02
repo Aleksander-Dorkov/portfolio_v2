@@ -6,7 +6,6 @@ import { SkillsSectionComponent } from "./components/skills/skills-section.compo
 import { NavImageComponent } from "./components/nav/nav-image.component";
 import { ProjectSectionComponent } from "./components/perosnal_projects/project.section.component";
 import { AboutMeSectionComponent } from "./components/about/about.me.section.component";
-import { SvgComponent } from "./components/nav/svg.component";
 import {
   ContactsSectionComponent
 } from "./components/contacts_and_feedback/contacts-section.component";
@@ -22,11 +21,9 @@ import AOS from "aos";
     NavImageComponent,
     ProjectSectionComponent,
     AboutMeSectionComponent,
-    SvgComponent,
     ContactsSectionComponent
   ],
   template: `
-    <app-svg/>
     <app-nav-bar id="HOME"/>
     <app-nav-image/>
     <app-skills-section id="SKILLS"/>
