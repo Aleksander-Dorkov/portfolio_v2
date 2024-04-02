@@ -1,4 +1,4 @@
 export class Constants {
-  static lie = true;
-  static downloadResume = true;
+  static lie = false;
+  static downloadResume = false;
 }
