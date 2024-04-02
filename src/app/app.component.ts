@@ -23,7 +23,7 @@ import AOS from "aos";
     ProjectSectionComponent,
     AboutMeSectionComponent,
     SvgComponent,
-    ContactsSectionComponent,
+    ContactsSectionComponent
   ],
   template: `
     <app-svg/>
@@ -47,7 +47,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('ss');
     AOS.init();
   }
 }

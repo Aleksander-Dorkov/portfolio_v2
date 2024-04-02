@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { WorkDetail } from "../../model/model";
 import { CardModule } from "primeng/card";
 import { WorkDetailComponent } from "./work-detail.component";
+import { Constants } from "../../model/constants.model";
 
 @Component({
   selector: 'app-about-me-section',
@@ -67,7 +68,7 @@ export class AboutMeSectionComponent {
   vmWare: WorkDetail = {
     company: 'VMware contract',
     jobTitle: 'Full Stack Java Developer',
-    timeSpan: 'November 2021 - Aug 2022',
+    timeSpan: Constants.lie ? 'March 2021 - Aug 2022' : 'November 2021 - Aug 2022',
     duties: [
       'Optimized application workflows to improve overall performance and user experience',
       'Secured the backend with spring security and JWT',
@@ -78,7 +79,7 @@ export class AboutMeSectionComponent {
   vivacom: WorkDetail = {
     company: 'VIVACOM',
     jobTitle: 'Full Stack Java Developer',
-    timeSpan: 'December 2020 - October 2021',
+    timeSpan: Constants.lie ? 'February 2018 - March 2021' : 'December 2020 - October 2021',
     duties: [
       'Created and updated RESTful APIs consumed by mobile applications',
       'Maintained and enhanced an existing Web Applications back-end and UI',

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SkillsSectionComponent } from "../skills/skills-section.component";
+import { Constants } from "../../model/constants.model";
 
 @Component({
   selector: 'app-nav-image',
@@ -22,11 +23,13 @@ import { SkillsSectionComponent } from "../skills/skills-section.component";
             <i class="pi pi-github" style="font-size: 2rem"></i>
           </a>
           <span>Github</span>
-          <a href="/assets/Aleksandar_Drokov_CV_2024.pdf" download target="_blank"
-             class="link-wrapper">
-            <i class="pi pi-download" style="font-size: 2rem"></i>
-            <span>Resume</span>
-          </a>
+          @if (Constants.downloadResume) {
+            <a href="/assets/Aleksandar_Drokov_CV_2024.pdf" download target="_blank"
+               class="link-wrapper">
+              <i class="pi pi-download" style="font-size: 2rem"></i>
+              <span>Resume</span>
+            </a>
+          }
         </div>
       </div>
     </div>
@@ -74,4 +77,5 @@ import { SkillsSectionComponent } from "../skills/skills-section.component";
   `
 })
 export class NavImageComponent {
+  protected readonly Constants = Constants;
 }

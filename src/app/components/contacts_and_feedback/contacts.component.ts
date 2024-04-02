@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Constants } from "../../model/constants.model";
 
 @Component({
   selector: 'app-contacts',
@@ -16,18 +17,22 @@ import { Component } from '@angular/core';
       </div>
       <li>
         <div data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-          <i class="pi pi-envelope"></i>
-          Email Address : Click to send me an email
+          <a href="mailto:aleksandar.dorkov@gmail.com" class="link-wrapper">
+            <i class="pi pi-envelope"></i>
+            Email Address : Click to send me an email
+          </a>
         </div>
       </li>
       <li>
-        <div data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-          <a href="/assets/Aleksandar_Drokov_CV_2024.pdf" download target="_blank"
-             class="link-wrapper">
-            <i class="pi pi-file-pdf"></i>
-            Resume : Click to read my resume online
-          </a>
-        </div>
+        @if (Constants.downloadResume) {
+          <div data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+            <a href="/assets/Aleksandar_Drokov_CV_2024.pdf" download target="_blank"
+               class="link-wrapper">
+              <i class="pi pi-file-pdf"></i>
+              Resume : Click to read my resume online
+            </a>
+          </div>
+        }
       </li>
     </ul>
   `,
@@ -65,4 +70,5 @@ import { Component } from '@angular/core';
 })
 export class ContactsComponent {
 
+  protected readonly Constants = Constants;
 }
